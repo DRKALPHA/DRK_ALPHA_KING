@@ -21,8 +21,14 @@ let desc = `
 
 title: ${data.title}
 description: ${data.description}
-`
+time: ${data.timestamp}
+ago: ${data.ago}
+views: ${data.views}
 
+MADE BY DRK_Developer
+`
+await conn.se
+    
 
 }catch(e){
 console.log(e)
