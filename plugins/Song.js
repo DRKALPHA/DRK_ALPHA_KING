@@ -34,9 +34,9 @@ await conn.sendMessage(form,{image:{url: data.thumbnail},caption:desc},{quoted:m
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
-//send audio message 
+//send audio + document message 
 await conn.sendMessage(form,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(form,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3"},{quoted:mek})
+await conn.sendMessage(form,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"MADE BY DRK Developer"},{quoted:mek})
 
 
 
@@ -80,9 +80,9 @@ await conn.sendMessage(form,{image:{url: data.thumbnail},caption:desc},{quoted:m
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
-//send video message 
+//send video + document message 
 await conn.sendMessage(form,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(form,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4"},{quoted:mek})
+await conn.sendMessage(form,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DRK Developer"},{quoted:mek})
 
 
 
