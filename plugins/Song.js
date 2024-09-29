@@ -35,7 +35,11 @@ let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
 //send audio message 
-await conn.sendMessage(form,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek)
+await conn.sendMessage(form,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
+
+
+
+
 
 }catch(e){
 console.log(e)
