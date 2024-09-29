@@ -17,7 +17,7 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-☛ ALPHABOT SONG DOWNLOADER ☚
+☛ DRK ALPHA BOT SONG DOWNLOADER ☚
 
 title: ${data.title}
 description: ${data.description}
