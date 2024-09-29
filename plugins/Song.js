@@ -27,8 +27,15 @@ views: ${data.views}
 
 MADE BY DRK_Developer
 `
-await conn.se
+await conn.sendMessage(form,{image:{url: data.thumbnail},caption:desc},{quoted:mek);
+
+//download audio
     
+let down = await fg.yta(url)
+let downloadUrl = down.dl_url
+
+//send audio message 
+await conn.sendMessage(form,{}
 
 }catch(e){
 console.log(e)
