@@ -9,4 +9,5 @@ SESSION_ID: process.env.SESSION_ID,
 ALIVE_IMG: process.env.ALIVE_IMG || "image url ekak ",
 ALIVE_MSG: process.env.AMIVE_MSG || "Hello, I am Alive",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || 'true',
+MODE: process.env.MODE || "public",
 };
