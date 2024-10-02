@@ -134,6 +134,13 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
 
+//===============================work-type============================================= 
+if(lisOwner && config.MODE === "private") return
+if(lisOwner && isGroup && config.MODE === "inbox") return
+if(lisOwner && !isGroup && config.MODE === "groups") return
+//=============================================================================
+
+
 
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
