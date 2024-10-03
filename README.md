@@ -33,7 +33,7 @@
 <div>
 <img src="[https://imgur.com/a/gKtI6iU.gif](https://imgur.com/a/gKtI6iU)" height="90" width="100%">
 
-<a href="judicial-ceciley-kavindudrk-77be604f.koyeb.app/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="LOGIN WITH PAIR CODE" width="250"></a>
+<a href="https://local-danny-kavindudrk-b3fa2665.koyeb.app//"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="LOGIN WITH PAIR CODE" width="250"></a>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
