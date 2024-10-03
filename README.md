@@ -1,7 +1,7 @@
 ```NETHU-MD WHATSAPP USER BOT CREATED BY MR NETHMIKA OFC```
 
 <div align="center">
-    <b>NETHU-MD USER BOT</b>
+    <b>DARK ROYAL KING USER BOT</b>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 <div align="left">
@@ -15,9 +15,9 @@
   </a>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-`NETHU-MD` whatsapp bot is,
+`DARK ROYAL KING` whatsapp bot is,
 
-      NETHU-MD යනු ඔබට පහසුවෙන් හැසිරවිය හැකි Bot වරයෙකි.
+      DARK ROYAL KING යනු ඔබට පහසුවෙන් හැසිරවිය හැකි Bot වරයෙකි.
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
