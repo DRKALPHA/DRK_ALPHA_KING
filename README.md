@@ -27,7 +27,7 @@
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
   <p align="center">
-<a href="https://github.com/DRKALPHA/DRK_ALPHA_KING/fork" target="blank"><img align="center" src="https://imgur.com/a/gKtI6iU.gif" alt="Deploy bot" height="112" width="310" /></a>
+<a href="https://github.com/DRKALPHA/DRK_ALPHA_KING/fork" target="blank"><img align="center" src="https://imgur.com/a/dBaSKWF.gif" alt="Deploy bot" height="112" width="310" /></a>
   <div>
       
 <div>
