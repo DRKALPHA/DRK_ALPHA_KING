@@ -12,10 +12,6 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-    
-const voice = {
-    menu: 'AUD-20240918-WA0013.mp3'
-}
 
 let menu = {
 main: '',
@@ -37,7 +33,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 
 let madeMenu = ` *👋 Hello ${pushname}*
 
-✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗡𝗘𝗧𝗛𝗨-𝗠𝗗! ✨ 
+✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗗𝗔𝗥𝗞 𝗔𝗟𝗣𝗛𝗔 𝗞𝗜𝗡𝗚! ✨ 
 ╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ 」
 │◈ ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
 │◈ ᴏᴡɴᴇʀ ɴᴀᴍᴇ : ɴᴇᴛʜᴍɪᴋᴀ ᴍᴀɪɴ
