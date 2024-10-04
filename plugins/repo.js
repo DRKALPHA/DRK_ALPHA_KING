@@ -1,1 +1,114 @@
-const _0x48d7bf=_0x2090;(function(_0x1d1194,_0x5d092e){const _0x1138b9=_0x2090,_0x4a2e23=_0x1d1194();while(!![]){try{const _0x4099fa=parseInt(_0x1138b9(0x139))/0x1+-parseInt(_0x1138b9(0x131))/0x2*(parseInt(_0x1138b9(0x12e))/0x3)+-parseInt(_0x1138b9(0x12c))/0x4+-parseInt(_0x1138b9(0x130))/0x5*(-parseInt(_0x1138b9(0x12b))/0x6)+parseInt(_0x1138b9(0x12f))/0x7*(parseInt(_0x1138b9(0x133))/0x8)+-parseInt(_0x1138b9(0x132))/0x9+parseInt(_0x1138b9(0x12d))/0xa;if(_0x4099fa===_0x5d092e)break;else _0x4a2e23['push'](_0x4a2e23['shift']());}catch(_0x5d4613){_0x4a2e23['push'](_0x4a2e23['shift']());}}}(_0x2be7,0xb1191));function _0x2be7(){const _0x3556ca=['8571703IHDoyg','2315YmAmAC','692iFzNKH','11215278GKjLEY','8PkHOko','main','sendMessage','*\x0a\x0a*REPO\x20LINK\x20👇*\x0a\x0a🧚‍♀️◦https://github.com/nethu-cloud/NETHU-MD-V1\x0a\x0a*PLEASE\x20SUBSCRIBE\x20MY\x20YOUTUBE\x20CHANNEL\x20👇*\x0a\x0a🧚‍♀️◦\x20https://www.youtube.com/@SlNethuMax\x0a\x0a*PLEASE\x20FOLLOW\x20MY\x20WHATSAPP\x20CHANNEL\x20👇*\x0a\x0a🧚‍♀️◦\x20https://whatsapp.com/channel/0029VagCogPGufJ3kZWjsW3A\x0a\x0a>\x20*ᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ɴᴇᴛʜᴍɪᴋᴀ\x20ᴍᴀɪɴ*\x0a\x0a','https://imgtr.ee/images/2024/09/17/37f9be869d1404ef1a5d188178450537.jpeg','*👋\x20Hello\x20','401349aoEkae','log','../command','repo','4326VIeqFi','3808668loMpog','9999850iMEUdF','312pvoiaJ'];_0x2be7=function(){return _0x3556ca;};return _0x2be7();}function _0x2090(_0x57be9c,_0x5cecf2){const _0x2be7fb=_0x2be7();return _0x2090=function(_0x20903d,_0x5bbdc5){_0x20903d=_0x20903d-0x12b;let _0x48a9f1=_0x2be7fb[_0x20903d];return _0x48a9f1;},_0x2090(_0x57be9c,_0x5cecf2);}const {cmd,commands}=require(_0x48d7bf(0x13b));cmd({'pattern':_0x48d7bf(0x13c),'desc':'repo\x20the\x20bot','category':_0x48d7bf(0x134),'react':'📡','filename':__filename},async(_0x327033,_0x4bcf44,_0x3fdc26,{from:_0xb08e3d,quoted:_0x3e21f8,body:_0x728c4d,isCmd:_0x5511cf,command:_0x42b245,args:_0x51e03f,q:_0x5ef4e8,isGroup:_0x474db1,sender:_0x325e3c,senderNumber:_0x419ae6,botNumber2:_0x24eb07,botNumber:_0x121dfa,pushname:_0x5663cf,isMe:_0x860757,isOwner:_0x17d643,groupMetadata:_0x1f32e0,groupName:_0x1f278d,participants:_0x60e406,groupAdmins:_0x3b2fe7,isBotAdmins:_0x2d939b,isAdmins:_0x2fe81c,reply:_0x4db267})=>{const _0x434c17=_0x48d7bf;try{let _0xe54db9=_0x434c17(0x138)+_0x5663cf+_0x434c17(0x136);await _0x327033[_0x434c17(0x135)](_0xb08e3d,{'image':{'url':_0x434c17(0x137)},'caption':_0xe54db9},{'quoted':_0x4bcf44});}catch(_0x3c182f){console[_0x434c17(0x13a)](_0x3c182f),_0x4db267(''+_0x3c182f);}});
+import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg;
+import axios from 'axios';
+
+const searchRepo = async (m, Matrix) => {
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+
+  const validCommands = ['repo', 'sc', 'script'];
+
+  if (validCommands.includes(cmd)) {
+    const repoUrl = `https://github.com/DRK-S-TEN/KLAUS-MD-`;
+    
+    await handleRepoCommand(m, Matrix, repoUrl);
+  }
+};
+
+const handleRepoCommand = async (m, Matrix, repoUrl) => {
+  try {
+    const response = await axios.get(repoUrl);
+    const repoData = response.data;
+
+    const {
+      full_name,
+      name,
+      forks_count,
+      stargazers_count,
+      created_at,
+      updated_at,
+      owner,
+    } = repoData;
+
+    const messageText = `*_Repository Information:_*\n
+*_Name:_* ${name}
+*_Stars:_* ${stargazers_count}
+*_Forks:_* ${forks_count}
+*_Created At:_* ${new Date(created_at).toLocaleDateString()}
+*_Last Updated:_* ${new Date(updated_at).toLocaleDateString()}
+*_Owner:_* ${owner.login}
+    `;
+
+    const repoMessage = generateWAMessageFromContent(m.from, {
+      viewOnceMessage: {
+        message: {
+          messageContextInfo: {
+            deviceListMetadata: {},
+            deviceListMetadataVersion: 2,
+          },
+          interactiveMessage: proto.Message.InteractiveMessage.create({
+            body: proto.Message.InteractiveMessage.Body.create({
+              text: messageText,
+            }),
+            footer: proto.Message.InteractiveMessage.Footer.create({
+              text: '𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐊𝐋𝐀𝐔𝐒',
+            }),
+            header: proto.Message.InteractiveMessage.Header.create({
+              ...(await prepareWAMessageMedia({
+                image: {
+                  url: 'https://i.imgur.com/iZhcpEQ.jpeg',
+                },
+              }, { upload: Matrix.waUploadToServer })),
+              title: '',
+              gifPlayback: true,
+              subtitle: '',
+              hasMediaAttachment: false,
+            }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons: [
+                {
+                  name: 'quick_reply',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'Contact Owner',
+                    id: '.owner',
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: 'Click Here To Fork',
+                    url: repoUrl.replace('api.', '').replace('repos/', '/forks/'),
+                  }),
+                },
+                {
+                  name: 'cta_url',
+                  buttonParamsJson: JSON.stringify({
+                    display_text: ' 𝙎-𝙏𝞢𝞜',
+                    url: 'https://whatsapp.com/channel/0029Vakp0UnICVfe3I2Fe72w',
+                  }),
+                },
+              ],
+            }),
+            contextInfo: {
+              mentionedJid: [m.sender],
+              forwardingScore: 9999,
+              isForwarded: true,
+            },
+          }),
+        },
+      },
+    }, {});
+
+    await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
+      messageId: repoMessage.key.id,
+    });
+    await m.React('✅');
+  } catch (error) {
+    console.error('Error processing your request:', error);
+    m.reply('Error processing your request.');
+    await m.React('❌');
+  }
+};
+
+export default searchRepo;

@@ -1,21 +1,18 @@
-const config = require('../config')
-const {cmd , commands} = require('../command')
-const {sleep} = require('../lib/functions')
+const restartBot = async (m) => {
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
-cmd({
-    pattern: "restart",
-    desc: "restart the bot",
-    category: "owner",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-const {exec} = require("child_process")
-reply("restarting...")
-await sleep(1500)
-exec("pm2 restart all")
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+  if (cmd === 'restart') {
+    try {
+      m.reply('Proses....')
+     await process.exit()
+    } catch (error) {
+      console.error(error);
+      await m.React("❌");
+      return m.reply(`An error occurred while restarting the bot: ${error.message}`);
+    }
+  }
+};
+
+export default restartBot;

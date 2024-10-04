@@ -1,1 +1,81 @@
-const _0x1f39fc=_0x5bac;(function(_0x2cd805,_0x2a9e9a){const _0xe86498=_0x5bac,_0xa1f6c5=_0x2cd805();while(!![]){try{const _0x1f1620=parseInt(_0xe86498(0x1d0))/0x1*(-parseInt(_0xe86498(0x1d8))/0x2)+-parseInt(_0xe86498(0x1e4))/0x3+-parseInt(_0xe86498(0x1f7))/0x4*(-parseInt(_0xe86498(0x1d5))/0x5)+-parseInt(_0xe86498(0x1d1))/0x6*(-parseInt(_0xe86498(0x1df))/0x7)+-parseInt(_0xe86498(0x1e3))/0x8+-parseInt(_0xe86498(0x1e7))/0x9+parseInt(_0xe86498(0x1da))/0xa;if(_0x1f1620===_0x2a9e9a)break;else _0xa1f6c5['push'](_0xa1f6c5['shift']());}catch(_0x1c79e5){_0xa1f6c5['push'](_0xa1f6c5['shift']());}}}(_0x511b,0x385a6));const axios=require(_0x1f39fc(0x1de)),config=require(_0x1f39fc(0x1d4)),{cmd,commands}=require(_0x1f39fc(0x1e0));cmd({'pattern':'githubstalk','desc':_0x1f39fc(0x1eb),'category':_0x1f39fc(0x1f1),'react':_0x1f39fc(0x1dc),'filename':__filename},async(_0xbf73de,_0xa4373c,_0x3c943c,{from:_0x38cd07,quoted:_0x1e6161,body:_0x4fb663,isCmd:_0x4a12e1,command:_0x46ee7b,args:_0x196c5b,q:_0x214b6d,isGroup:_0x568d9b,sender:_0x16f7d0,senderNumber:_0x538c7e,botNumber2:_0x4a3419,botNumber:_0x36d459,pushname:_0x26991c,isMe:_0x320c45,isOwner:_0x46f905,groupMetadata:_0x52bce1,groupName:_0x5dac04,participants:_0x12855a,groupAdmins:_0x4d0e44,isBotAdmins:_0x16bb54,isAdmins:_0x16b5b3,reply:_0x353a8a})=>{const _0x465c3e=_0x1f39fc;try{const _0x250904=_0x196c5b[0x0];if(!_0x250904)return _0x353a8a('Please\x20provide\x20a\x20GitHub\x20username.');const _0x3c8a04=_0x465c3e(0x1d2)+_0x250904,_0x4369c2=await axios[_0x465c3e(0x1ef)](_0x3c8a04),_0x27537a=_0x4369c2[_0x465c3e(0x1f0)];let _0x138fca='\x20\x20\x20\x20\x20🔍_*NETHU-MD\x20GIT\x20STALK*_🔎\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x0a👤\x20*Username*:\x20'+(_0x27537a[_0x465c3e(0x1e6)]||_0x27537a[_0x465c3e(0x1ee)])+'\x0a\x0a🔗\x20*Github\x20Url*:('+_0x27537a[_0x465c3e(0x1d3)]+_0x465c3e(0x1e1)+(_0x27537a[_0x465c3e(0x1ed)]||_0x465c3e(0x1e8))+'\x0a\x0a🏙️\x20*Location*:\x20'+(_0x27537a['location']||'Unknown')+_0x465c3e(0x1f6)+_0x27537a['public_repos']+_0x465c3e(0x1ea)+_0x27537a['followers']+_0x465c3e(0x1f2)+_0x27537a[_0x465c3e(0x1d9)]+_0x465c3e(0x1d7)+new Date(_0x27537a[_0x465c3e(0x1f3)])[_0x465c3e(0x1ec)]()+_0x465c3e(0x1d6)+_0x27537a[_0x465c3e(0x1e5)]+_0x465c3e(0x1e2);await _0xbf73de[_0x465c3e(0x1f4)](_0x38cd07,{'image':{'url':_0x27537a[_0x465c3e(0x1db)]},'caption':_0x138fca},{'quoted':_0xa4373c});}catch(_0x3b8284){console[_0x465c3e(0x1e9)](_0x3b8284),_0x353a8a('єяяσя\x20ƒєт¢нιηg\x20∂αтα:\x20'+(_0x3b8284[_0x465c3e(0x1dd)]?_0x3b8284['response'][_0x465c3e(0x1f0)][_0x465c3e(0x1f5)]:_0x3b8284['message']));}});function _0x5bac(_0x39625d,_0x15ae38){const _0x511ba5=_0x511b();return _0x5bac=function(_0x5bac6a,_0x205b5b){_0x5bac6a=_0x5bac6a-0x1d0;let _0x55c38b=_0x511ba5[_0x5bac6a];return _0x55c38b;},_0x5bac(_0x39625d,_0x15ae38);}function _0x511b(){const _0x3e1e37=['\x0a\x0a📊\x20*Public\x20Repos*:\x20','8FBEetq','10845lXyRCS','126yafCQL','https://api.github.com/users/','html_url','../config','843955OURYQR','\x0a\x0a🔭\x20*Public\x20Gists*:\x20','\x0a\x0a📅\x20*Created\x20At*:\x20','6fbVoKA','following','4982060rMViOt','avatar_url','🖥️','response','axios','52766ThiEoF','../command',')\x0a\x0a📝\x20*Bio*:\x20','\x0a\x0a>\x20*ᴘᴏᴡᴇʀᴇᴅ\x20ʙʏ\x20ɴᴇᴛʜᴍɪᴋᴀ\x20ᴍᴀɪɴ*\x0a\x0a','1626696EpacgT','996534SKXXQn','public_gists','name','1756926UGbMNx','Not\x20available','log','\x0a\x0a👥\x20*Followers*:\x20','Fetch\x20detailed\x20GitHub\x20user\x20profile\x20including\x20profile\x20picture.','toDateString','bio','login','get','data','other','\x20|\x20Following:\x20','created_at','sendMessage','message'];_0x511b=function(){return _0x3e1e37;};return _0x511b();}
+import axios from 'axios';
+
+const githubStalk = async (m, gss) => {
+  try {
+    const prefixMatch = m.body.match(/^[\\/!#.]/);
+    const prefix = prefixMatch ? prefixMatch[0] : '/';
+    const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+    const text = m.body.slice(prefix.length + cmd.length).trim();
+    const args = text.split(' ');
+
+    const validCommands = ['githubstalk', 'ghstalk'];
+
+   if (validCommands.includes(cmd)) {
+      if (!args[0]) return m.reply('Mention a GitHub username to stalk.');
+
+      const username = args[0];
+
+      try {
+        // Fetch GitHub user data using Axios
+        const githubResponse = await axios.get(`https://api.github.com/users/${username}`);
+        const userData = githubResponse.data;
+
+        if (githubResponse.status !== 200) {
+          return m.reply(`❌ GitHub user not found.`);
+        }
+
+        // Construct the response message
+        let responseMessage = `🌟 *GitHub Profile - @${userData.login}*\n\n`;
+        responseMessage += `  ◦  *Name*: ${userData.name || 'N/A'}\n`;
+        responseMessage += `  ◦  *Username*: @${userData.login}\n`;
+        responseMessage += `  ◦  *Bio*: ${userData.bio || 'N/A'}\n`;
+        responseMessage += `  ◦  *ID*: ${userData.id}\n`;
+        responseMessage += `  ◦  *Node ID*: ${userData.node_id}\n`;
+        responseMessage += `  ◦  *Profile URL*: ${userData.avatar_url}\n`;
+        responseMessage += `  ◦  *GitHub URL*: ${userData.html_url}\n`;
+        responseMessage += `  ◦  *Type*: ${userData.type}\n`;
+        responseMessage += `  ◦  *Admin*: ${userData.site_admin ? 'Yes' : 'No'}\n`;
+        responseMessage += `  ◦  *Company*: ${userData.company || 'N/A'}\n`;
+        responseMessage += `  ◦  *Blog*: ${userData.blog || 'N/A'}\n`;
+        responseMessage += `  ◦  *Location*: ${userData.location || 'N/A'}\n`;
+        responseMessage += `  ◦  *Email*: ${userData.email || 'N/A'}\n`;
+        responseMessage += `  ◦  *Public Repositories*: ${userData.public_repos}\n`;
+        responseMessage += `  ◦  *Public Gists*: ${userData.public_gists}\n`;
+        responseMessage += `  ◦  *Followers*: ${userData.followers}\n`;
+        responseMessage += `  ◦  *Following*: ${userData.following}\n`;
+        responseMessage += `  ◦  *Created At*: ${userData.created_at}\n`;
+        responseMessage += `  ◦  *Updated At*: ${userData.updated_at}\n`;
+
+        const githubReposResponse = await axios.get(`https://api.github.com/users/${username}/repos?per_page=5&sort=stargazers_count&direction=desc`);
+        const reposData = githubReposResponse.data;
+
+        if (reposData.length > 0) {
+          const topRepos = reposData.slice(0, 5); // Display the top 5 starred repositories
+
+          const reposList = topRepos.map(repo => {
+            return `  ◦  *Repository*: [${repo.name}](${repo.html_url})
+  ◦  *Description*: ${repo.description || 'N/A'}
+  ◦  *Stars*: ${repo.stargazers_count}
+  ◦  *Forks*: ${repo.forks}`;
+          });
+
+          const reposCaption = `📚 *Top Starred Repositories*\n\n${reposList.join('\n\n')}`;
+          responseMessage += `\n\n${reposCaption}`;
+        } else {
+          responseMessage += `\n\nNo public repositories found.`;
+        }
+
+        // Send the message with the updated caption and user's avatar
+        await gss.sendMessage(m.from, { image: { url: userData.avatar_url }, caption: responseMessage }, { quoted: m });
+      } catch (error) {
+        console.error('Error fetching GitHub data:', error);
+        await gss.sendMessage(m.from, 'An error occurred while fetching GitHub data.', { quoted: m });
+      }
+    }
+  } catch (error) {
+    console.error('Error processing the command:', error);
+    m.reply('An error occurred while processing the command.');
+  }
+};
+
+export default githubStalk;
