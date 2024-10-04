@@ -14,9 +14,9 @@ const alive = async (m, Matrix) => {
 
   const uptimeMessage = `
 ┏━━🤖 _BOT STATUS:_🤖━━┓
-┃ 🏮  *Founder:*  𝙎-𝙏𝞢𝞜
-┃ 🗣️  *Bot Name:* 𝐊𝐋𝐀𝐔𝐒-𝐌𝐃
-┃ 💻  *Host:* Kali Linux
+┃ 🏮  *Founder:*  DRK Developer
+┃ 🗣️  *Bot Name:* 𝗗𝗔𝗞-𝗠𝗗
+┃ 💻  *Host:* safari (mac os)
 ╰───────────────⍟`;
 
   const buttons = [
@@ -48,7 +48,7 @@ const alive = async (m, Matrix) => {
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐊𝐋𝐀𝐔𝐒"
+            text: "𝙳𝙴𝚅𝙴𝙻𝙾𝙿 𝙱𝚈 𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
@@ -65,7 +65,7 @@ const alive = async (m, Matrix) => {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120463249960769123@newsletter',
-                  newsletterName: "𝐊𝐋𝐀𝐔𝐒-𝐌𝐃",
+                  newsletterName: "𝘿𝘼𝙆-𝙈𝘿",
                   serverMessageId: 143
                 }
               }
