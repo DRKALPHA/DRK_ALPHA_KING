@@ -5,7 +5,7 @@ const {runtime} = require('../lib/functions')
 
 cmd({
     pattern: "menu",
-    desc: "To get the menu.",
+    desc: "get cmd list",
     react: "📜",
     category: "main",
     filename: __filename
@@ -83,9 +83,7 @@ let madeMenu = ` *👋 Hello ${pushname}*
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʀᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴍᴀɪɴ*
 `
 
-await conn.sendMessage(from, { audio: { url: voice.menu }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
-
-return await conn.sendMessage(from,{image: {url: `https://www.imgtr.net/LnJsCASUkzK6DmA`},caption:madeMenu},{quoted: mek})
+await conn.sendMessage(form,{image:{url:"https://www.imgtr.net/LnJsCASUkzK6DmA"},caption:madeMenu},{quoted:mek})
 }catch(e){
 console.log(e)
 reply(`Error`)
