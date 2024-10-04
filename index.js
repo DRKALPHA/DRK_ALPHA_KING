@@ -141,9 +141,9 @@ m.react("✅")
 }
 //====================================================================
 //===============================work-type============================================= 
-if(lisOwner && config.MODE === "private") return
-if(lisOwner && isGroup && config.MODE === "inbox") return
-if(lisOwner && !isGroup && config.MODE === "groups") return
+if(!isOwner && config.MODE === "private") return
+if(!isOwner && isGroup && config.MODE === "inbox") return
+if(!isOwner && !isGroup && config.MODE === "groups") return
 //=============================================================================
 
 
