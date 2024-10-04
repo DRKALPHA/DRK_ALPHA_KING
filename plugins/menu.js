@@ -12,10 +12,6 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-    
-const voice = {
-    menu: 'AUD-20240918-WA0013.mp3'
-}
 
 let menu = {
 main: '',
