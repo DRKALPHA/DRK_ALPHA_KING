@@ -4,7 +4,7 @@ const yts = require('yt-search')
 
 cmd({
     pattern: "song",
-    react: "🎧",
+    react: "🎵",
     desc: "downlod song",
     category: "downlod",
     filename: __filename
@@ -40,7 +40,7 @@ let downloadUrl = down.dl_url
 
 //send audio message 
 await conn.sendMessage(from,{audio:{url:downloadUrl},mimetype:"audio/mpeg",caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴍɪᴋᴀ ᴍᴀɪɴ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁*"},{quoted:mek})
 
   
 
@@ -90,7 +90,7 @@ let downloadUrl = down.dl_url
 
 //send video  message 
 await conn.sendMessage(from,{video:{url:downloadUrl},mimetype:"video/mp4",caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴇᴛʜᴍɪᴋᴀ ᴍᴀɪɴ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙳𝚁𝙺 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁*"},{quoted:mek})
 
   
 
