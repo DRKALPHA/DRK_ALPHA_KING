@@ -18,7 +18,7 @@
 
 `DAK-MD` whatsapp bot is,
 
-      ඔබට පහසුවෙන් හැසිරවිය හැකි Bot වරයෙකි.
+      ඔබට පහසුවෙන් හැසිරවිය හැකි Whatsapp Bot වරයෙකි.
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
